@@ -114,7 +114,7 @@
             position: absolute;
             pointer-events: none;
             color: var(--accent-amber);
-            opacity: 0.4;
+            opacity: 0.3;
             z-index: 0;
             animation: float-joy 10s infinite ease-in-out;
         }
@@ -125,7 +125,7 @@
         }
 
         .text-joy-accent {
-            color: #D97706; /* צבע השמחה להדגשות טקסט חיוביות */
+            color: #D97706;
             font-weight: 700;
         }
 
@@ -167,7 +167,7 @@
             </h1>
             
             <p class="text-2xl md:text-3xl font-bold text-[#B07D62] mb-10 max-w-3xl mx-auto leading-relaxed">
-                למה השמחה היא לא בונוס – אלא תנאי לבריאות?
+                למה השמחה היא לא בונוס – אלא <span class="border-b-4 border-amber-400">תנאי לבריאות?</span>
             </p>
             
             <p class="text-xl md:text-2xl mb-14 text-primary-green max-w-4xl mx-auto font-light leading-relaxed">
@@ -198,7 +198,7 @@
                         <span>שמרי לי מקום בהדרכה</span>
                         <i data-lucide="chevron-left" class="w-6 h-6"></i>
                     </button>
-                    <p class="text-center text-sm text-amber-700 mt-6 flex items-center justify-center gap-2 font-medium">
+                    <p class="text-center text-sm text-gray-500 mt-6 flex items-center justify-center gap-2 font-medium">
                         מצטרפות יחד לשמחה שבלב 😊
                     </p>
                 </form>
@@ -211,26 +211,26 @@
         <div class="max-w-4xl mx-auto">
             <h2 class="text-center text-4xl font-bold mb-16 text-primary-green">האם את מרגישה את זה?</h2>
             
-            <div class="space-y-6 mb-16">
-                <div class="flex gap-5 items-start p-5 rounded-3xl hover:bg-amber-50/50 transition-all">
+            <div class="space-y-4 mb-16">
+                <div class="flex gap-5 items-start p-4 rounded-3xl hover:bg-amber-50/30 transition-all">
                     <span class="text-3xl">😊</span>
-                    <p class="text-xl font-light">את מנסה להיות <span class="text-joy-accent">שמחה</span> – אבל בפנים יש דאגות, לחצים, ופחדים שלא עוזבים</p>
+                    <p class="text-xl font-light">את מנסה להיות שמחה – אבל בפנים יש דאגות, לחצים, ופחדים שלא עוזבים</p>
                 </div>
-                <div class="flex gap-5 items-start p-6 rounded-3xl hover:bg-amber-50/50 transition-all">
+                <div class="flex gap-5 items-start p-4 rounded-3xl hover:bg-amber-50/30 transition-all">
                     <span class="text-3xl">😊</span>
-                    <p class="text-xl font-light">הגוף כואב – גב, ברכיים, כאבי ראש כרוניים, ואת יודעת שזה <span class="text-joy-accent">קשור גם ללחץ</span></p>
+                    <p class="text-xl font-light">הגוף כואב – גב, ברכיים, כאבי ראש כרוניים, ואת יודעת שזה קשור גם ללחץ</p>
                 </div>
-                <div class="flex gap-5 items-start p-6 rounded-3xl hover:bg-amber-50/50 transition-all">
+                <div class="flex gap-5 items-start p-4 rounded-3xl hover:bg-amber-50/30 transition-all">
                     <span class="text-3xl">😊</span>
-                    <p class="text-xl font-light">העיכול לא עובד – נפיחות, עצירות, תחושה ש<span class="text-joy-accent">הגוף מבקש איזון</span> בבטן</p>
+                    <p class="text-xl font-light">העיכול לא עובד – נפיחות, עצירות, תחושה שהאוכל "תקוע" בבטן</p>
                 </div>
-                <div class="flex gap-5 items-start p-6 rounded-3xl hover:bg-amber-50/50 transition-all">
+                <div class="flex gap-5 items-start p-4 rounded-3xl hover:bg-amber-50/30 transition-all">
                     <span class="text-3xl">😊</span>
-                    <p class="text-xl font-light">את תמיד עייפה – אפילו אחרי שינה, <span class="text-joy-accent">הנפש מבקשת אנרגיה</span> להתחיל את היום</p>
+                    <p class="text-xl font-light">את תמיד עייפה – אפילו אחרי שינה, אין אנרגיה להתחיל את היום</p>
                 </div>
-                <div class="flex gap-5 items-start p-6 rounded-3xl hover:bg-amber-50/50 transition-all">
+                <div class="flex gap-5 items-start p-4 rounded-3xl hover:bg-amber-50/30 transition-all">
                     <span class="text-3xl">😊</span>
-                    <p class="text-xl font-light">נופלת חולה לעיתים קרובות – והגוף זקוק ל<span class="text-joy-accent">חיזוק פנימי אמיתי</span></p>
+                    <p class="text-xl font-light">נופלת חולה לעיתים קרובות – שפעת, וירוסים, החלמה איטית</p>
                 </div>
             </div>
 
@@ -238,16 +238,16 @@
                 <h3 class="text-2xl font-bold mb-8 text-primary-green">ויש משהו עמוק יותר:</h3>
                 <ul class="space-y-6 text-xl text-gray-800 font-light leading-relaxed">
                     <li class="flex items-start gap-4">
-                        <span class="text-amber-500 mt-1"><i data-lucide="sparkle" class="w-5 h-5 fill-amber-500 text-amber-500"></i></span>
-                        <span>את שומעת "משנכנס אדר מרבים בשמחה" – ותוהה <span class="text-joy-accent">איך זוכים לשמחה הזאת?</span></span>
+                        <i data-lucide="sparkle" class="w-6 h-6 text-amber-500 shrink-0 mt-1"></i>
+                        <span>את שומעת "משנכנס אדר מרבים בשמחה" – ותוהה איך זוכים לשמחה כשקשה?</span>
                     </li>
                     <li class="flex items-start gap-4">
-                        <span class="text-amber-500 mt-1"><i data-lucide="sparkle" class="w-5 h-5 fill-amber-500 text-amber-500"></i></span>
-                        <span>את רוצה להיכנס לפורים ב<span class="text-joy-accent">שמחה אמיתית</span> – ולהרגיש אותה בכל איבר</span>
+                        <i data-lucide="sparkle" class="w-6 h-6 text-amber-500 shrink-0 mt-1"></i>
+                        <span>את רוצה להיכנס לפורים בשמחה אמיתית – אבל לא מצליחה להרגיש את זה</span>
                     </li>
                     <li class="flex items-start gap-4">
-                        <span class="text-amber-500 mt-1"><i data-lucide="sparkle" class="w-5 h-5 fill-amber-500 text-amber-500"></i></span>
-                        <span>יש רצון עמוק להיות <span class="text-joy-accent">במיטבך</span>, עבורך ועבור משפחתך</span>
+                        <i data-lucide="sparkle" class="w-6 h-6 text-amber-500 shrink-0 mt-1"></i>
+                        <span>יש תחושה שאת לא מספיקה טובה, לא עושה מספיק, והאשמה רק מוסיפה עצבות</span>
                     </li>
                 </ul>
             </div>
@@ -260,54 +260,54 @@
             <h2 class="text-[#FFBF00] text-center text-4xl font-bold mb-20 tracking-wide underline decoration-white/20 underline-offset-8">בהדרכה הזו את תלמדי:</h2>
             <div class="grid md:grid-cols-3 gap-10">
                 <!-- Box 1 -->
-                <div class="p-10 bg-white/5 rounded-[40px] border border-white/10 text-center flex flex-col items-center hover:bg-white/10 transition-all text-white">
+                <div class="p-10 bg-white/5 rounded-[40px] border border-white/10 text-center flex flex-col items-center hover:bg-white/10 transition-all">
                     <div class="mb-8 p-5 bg-amber-400/20 rounded-3xl text-amber-400"><i data-lucide="shield" class="w-12 h-12"></i></div>
                     <h3 class="text-amber-400 text-2xl font-bold mb-6">ביטחון כיסוד השמחה</h3>
-                    <p class="text-[#FFFBEB] text-lg font-light leading-relaxed">איך לעבור למקום של <span class="text-amber-400 font-medium">ביטחון עמוק</span> שמשחרר את הגוף. לעבור מניהול הכל ל<span class="text-amber-400 font-medium italic">"להשאיר את זה בידיים שלו"</span>.</p>
+                    <p class="text-[#FFFBEB] text-lg font-light leading-relaxed">איך לעבור למקום של ביטחון עמוק שמשחרר את הגוף. לעבור מניהול הכל ל<span class="text-amber-400 font-medium">"להשאיר את זה בידיים שלו"</span>.</p>
                 </div>
                 <!-- Box 2 -->
-                <div class="p-10 bg-white/5 rounded-[40px] border border-white/10 text-center flex flex-col items-center hover:bg-white/10 transition-all text-white">
+                <div class="p-10 bg-white/5 rounded-[40px] border border-white/10 text-center flex flex-col items-center hover:bg-white/10 transition-all">
                     <div class="mb-8 p-5 bg-amber-400/20 rounded-3xl text-amber-400"><i data-lucide="heart" class="w-12 h-12"></i></div>
                     <h3 class="text-amber-400 text-2xl font-bold mb-6">הקשר בין שמחה לגוף</h3>
-                    <p class="text-[#FFFBEB] text-lg font-light leading-relaxed">איך <span class="text-amber-400 font-medium">שמחה מחזקת</span> את מערכת החיסון והעיכול. נלמד איך להפוך רגש חיובי ל<span class="text-amber-400 font-medium">כלי לבריאות פיזית</span>.</p>
+                    <p class="text-[#FFFBEB] text-lg font-light leading-relaxed">איך השמחה מחזקת את מערכת החיסון והעיכול. נלמד איך להפוך רגש חיובי לכלי לבריאות פיזית.</p>
                 </div>
                 <!-- Box 3 -->
-                <div class="p-10 bg-white/5 rounded-[40px] border border-white/10 text-center flex flex-col items-center hover:bg-white/10 transition-all text-white">
+                <div class="p-10 bg-white/5 rounded-[40px] border border-white/10 text-center flex flex-col items-center hover:bg-white/10 transition-all">
                     <div class="mb-8 p-5 bg-amber-400/20 rounded-3xl text-amber-400"><i data-lucide="smile-plus" class="w-12 h-12"></i></div>
                     <h3 class="text-amber-400 text-2xl font-bold mb-6">כלים מעשיים לשמחה</h3>
-                    <p class="text-[#FFFBEB] text-lg font-light leading-relaxed">החלפת מחשבות, <span class="text-amber-400 font-medium">"הביס הקטן"</span> של השמחה וניגון. כלים שיוצרים <span class="text-amber-400 font-medium">שנוי אמיתי ומידי</span> בתדר שלך.</p>
+                    <p class="text-[#FFFBEB] text-lg font-light leading-relaxed">החלפת מחשבות, "הביס הקטן" וניגון. כלים שיוצרים שינוי אמיתי ומידי בתדר שלך.</p>
                 </div>
             </div>
             <div class="text-center mt-20">
-                <a href="#register-bottom" class="cta-button md:w-auto text-white">אני רוצה להירשם עכשיו</a>
+                <a href="#register-bottom" class="cta-button md:w-auto">אני רוצה להירשם עכשיו</a>
             </div>
         </div>
     </section>
 
     <!-- --- WHO IS IT FOR --- -->
-    <section class="py-24 px-6 bg-white overflow-hidden">
+    <section class="py-24 px-6 bg-white overflow-hidden text-right">
         <div class="max-w-4xl mx-auto glass-card p-12 border-r-[20px] border-amber-400 shadow-xl">
             <h2 class="text-3xl font-bold mb-10 text-primary-green">למי ההדרכה הזו מתאימה?</h2>
             <div class="space-y-6">
-                <div class="flex items-center gap-5 p-5 rounded-2xl bg-amber-50/30 border border-amber-100/50">
-                    <i data-lucide="check-circle-2" class="w-8 h-8 text-amber-600 shrink-0"></i>
-                    <p class="text-xl font-medium">לך אם את רוצה <span class="text-joy-accent">להחזיר לעצמך את האיזון</span> בגילאי 50+</p>
+                <div class="flex items-center gap-5">
+                    <i data-lucide="check-circle-2" class="w-7 h-7 text-amber-600 shrink-0"></i>
+                    <p class="text-xl">לך אם את בגילאי 50+ ומרגישה שהגוף והנפש משתנים</p>
                 </div>
-                <div class="flex items-center gap-5 p-5 rounded-2xl bg-amber-50/30 border border-amber-100/50">
-                    <i data-lucide="check-circle-2" class="w-8 h-8 text-amber-600 shrink-0"></i>
-                    <p class="text-xl font-medium">לך אם את מבקשת <span class="text-joy-accent">להרגיש שמחה פנימית</span> אמיתית ומוצקה</p>
+                <div class="flex items-center gap-5">
+                    <i data-lucide="check-circle-2" class="w-7 h-7 text-amber-600 shrink-0"></i>
+                    <p class="text-xl">לך אם את אומרת "אני יודעת שצריך לשמוח" אבל לא מצליחה להרגיש</p>
                 </div>
-                <div class="flex items-center gap-5 p-5 rounded-2xl bg-amber-50/30 border border-amber-100/50">
-                    <i data-lucide="check-circle-2" class="w-8 h-8 text-amber-600 shrink-0"></i>
-                    <p class="text-xl font-medium">לך אם את מחפשת <span class="text-joy-accent">פתרונות טבעיים ומרגיעים</span> לגוף ולנפש</p>
+                <div class="flex items-center gap-5">
+                    <i data-lucide="check-circle-2" class="w-7 h-7 text-amber-600 shrink-0"></i>
+                    <p class="text-xl">לך אם את סובלת מכאבים, עייפות כרונית או בעיות עיכול מהלחץ</p>
                 </div>
-                <div class="flex items-center gap-5 p-5 rounded-2xl bg-amber-50/30 border border-amber-100/50">
-                    <i data-lucide="check-circle-2" class="w-8 h-8 text-amber-600 shrink-0"></i>
-                    <p class="text-xl font-medium">לך אם את מאמינה ב<span class="text-joy-accent">חיבור המנצח</span> בין תורה למדע</p>
+                <div class="flex items-center gap-5">
+                    <i data-lucide="check-circle-2" class="w-7 h-7 text-amber-600 shrink-0"></i>
+                    <p class="text-xl">לך אם את מחפשת גישה משולבת – חיבור אמיתי בין גוף לנפש</p>
                 </div>
-                <div class="flex items-center gap-5 p-5 rounded-2xl bg-amber-50/30 border border-amber-100/50">
-                    <i data-lucide="check-circle-2" class="w-8 h-8 text-amber-600 shrink-0"></i>
-                    <p class="text-xl font-medium">רוצה להיכנס לפורים ב<span class="text-joy-accent">שמחה ובביטחון</span></p>
+                <div class="flex items-center gap-5">
+                    <i data-lucide="check-circle-2" class="w-7 h-7 text-amber-600 shrink-0"></i>
+                    <p class="text-xl">לך אם את רוצה להיכנס לפורים אחרת השנה – מתוך שמחה פנימית</p>
                 </div>
             </div>
         </div>
@@ -327,10 +327,10 @@
             <div class="w-full md:w-7/12">
                 <h2 class="text-[#B07D62] text-4xl font-bold mb-8">מילה אישית ממני אליך</h2>
                 <div class="space-y-6 text-gray-800 text-xl leading-relaxed font-light">
-                    <p>אני יודעת איך זה להרגיש שאת "צריכה להיות שמחה" – ובפנים רק כובד. עברתי את זה בעצמי.</p>
-                    <p>וכשהבנתי את החיבור בין ביטחון לשמחה, בין שמחה לבריאות – <span class="text-joy-accent underline">הכל השתנה.</span> זה היה <span class="text-joy-accent">שינוי אמיתי שנשאר</span> איתי עד היום.</p>
-                    <p>ההדרכה הזו תיתן לך <span class="text-joy-accent font-medium">כלים מעשיים</span> מהתניא ומהמדע שעובדים ממש.</p>
-                    <p class="font-bold text-3xl text-primary-green mt-8">בואי ללמוד איתי איך <span class="text-joy-accent">להחזיר את האור</span> ללב.</p>
+                    <p>אני יודעת איך זה להרגיש שאת "צריכה להיות שמחה" – ובפנים רק כובד. לנסות לחייך כשבלב יש דאגות. להקשיב ל"משנכנס אדר מרבים בשמחה" – ולהרגיש אשמה שאת לא שם.</p>
+                    <p>עברתי את זה בעצמי. וכשהבנתי את החיבור בין ביטחון לשמחה, בין שמחה לבריאות – <span class="text-joy-accent">הכל השתנה.</span> זה היה שינוי אמיתי שנשאר איתי עד היום.</p>
+                    <p>ההדרכה הזו תיתן לך כלים מעשיים מהתניא ומהמדע שעובדים ממש.</p>
+                    <p class="font-bold text-3xl text-primary-green mt-8">בואי ללמוד איתי איך להחזיר את האור ללב.</p>
                     <p class="text-2xl italic mt-2">שלך, רבקה</p>
                 </div>
             </div>
@@ -339,11 +339,9 @@
 
     <!-- --- PRICE & REGISTRATION --- -->
     <section id="register-bottom" class="py-24 px-6 bg-lemon overflow-hidden">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-primary-green tracking-tight leading-tight">אל תפספסי את ההזדמנות להיכנס לפורים אחרת</h2>
-                <p class="text-2xl font-medium text-amber-800">הצטרפי אלינו לערב של גילוי, חיזוק ושקט פנימי</p>
-            </div>
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-primary-green tracking-tight leading-tight">אל תפספסי את ההזדמנות להיכנס לפורים אחרת</h2>
+            <p class="text-2xl font-medium text-amber-800 mb-16">הצטרפי אלינו לערב של גילוי, חיזוק ושקט פנימי</p>
 
             <div class="flex flex-col items-center gap-10">
                 <!-- PRICE BOX FIRST -->
@@ -361,20 +359,20 @@
                     <h3 class="text-2xl font-bold mb-8 text-center text-primary-green">הירשמי עכשיו להדרכה</h3>
                     <form onsubmit="return handleForm(event, this)" class="space-y-5 flex flex-col items-center">
                         <div class="text-right w-full">
-                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2 text-right">שם מלא</label>
+                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2">שם מלא</label>
                             <input type="text" name="full_name" placeholder="שמך המלא" required class="form-input">
                         </div>
                         <div class="text-right w-full">
-                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2 text-right">כתובת מייל</label>
+                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2">כתובת מייל</label>
                             <input type="email" name="email" placeholder="כתובת מייל" required class="form-input">
                         </div>
                         <div class="text-right w-full">
-                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2 text-right">טלפון נייד</label>
+                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2">טלפון נייד</label>
                             <input type="tel" name="phone" placeholder="מספר נייד" required pattern="05[0-9]{8}" class="form-input">
                         </div>
                         <button type="submit" class="cta-button mt-8 w-full md:w-auto">
-                            <span>אני רוצה להירשם</span>
-                            <i data-lucide="credit-card" class="w-6 h-6"></i>
+                            <span>אני רוצה להרשם</span>
+                            <i data-lucide="credit-card" class="w-6 h-6 text-white"></i>
                         </button>
                     </form>
                     <div class="mt-8 flex items-center justify-center gap-4 text-sm text-gray-600 font-medium">
@@ -391,20 +389,13 @@
             <h2 class="text-[#FFBF00] mb-12 text-4xl md:text-5xl font-extrabold tracking-wide">רגע לפני שאת הולכת...</h2>
             
             <div class="space-y-12 text-xl md:text-2xl font-light leading-relaxed">
-                <div class="text-white">
-                    יש הרבה הדרכות על בריאות. יש הרבה שיעורים על שמחה. אבל ההדרכה הזו שונה – <br class="hidden md:block">
-                    כי היא מחברת בין השניים: <span class="text-amber-400 font-bold underline underline-offset-4 decoration-amber-400/40">גוף ונפש.</span>
-                </div>
+                <p>יש הרבה הדרכות על בריאות. יש הרבה שיעורים על שמחה. אבל ההדרכה הזו שונה – כי היא מחברת בין השניים: <span class="text-amber-400 font-bold underline underline-offset-4 decoration-white/20">גוף ונפש.</span></p>
                 
                 <div class="bg-white/10 p-10 rounded-[40px] border border-white/20 text-white inline-block max-w-3xl">
-                    היא מלמדת אותך <span class="text-amber-400 font-bold text-3xl">איך לעבוד עם הדאגות</span> <br class="hidden md:block">
-                    ולהפוך אותן לכוח של חיוניות.
+                    היא מלמדת אותך <span class="text-amber-400 font-bold">איך לעבוד עם הדאגות</span> ולהפוך אותן לכוח של חיוניות.
                 </div>
                 
-                <div class="text-white">
-                    היא תכין אותך להיכנס לפורים אחרת. <br>
-                    מתוך <span class="text-amber-400 font-bold">שמחה פנימית.</span> מתוך <span class="text-amber-400 font-bold">ביטחון.</span> מתוך <span class="text-amber-400 font-bold">בריאות.</span>
-                </div>
+                <p>היא תכין אותך להיכנס לפורים אחרת. מתוך שמחה פנימית. מתוך ביטחון. מתוך בריאות.</p>
                 
                 <div class="pt-10">
                     <p class="text-3xl md:text-5xl text-amber-400 font-black drop-shadow-xl">
@@ -413,7 +404,7 @@
                 </div>
             </div>
             
-            <a href="#register-top" class="cta-button mt-20 md:w-auto text-white">
+            <a href="#register-top" class="cta-button mt-20 md:w-auto">
                 אני רוצה להצטרף - 37 ₪
             </a>
         </div>
