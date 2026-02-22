@@ -71,7 +71,7 @@
 
         .cta-button {
             background: var(--gold-gradient);
-            color: white !important; /* טקסט לבן על זהב */
+            color: white !important;
             border-radius: 24px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
@@ -114,7 +114,7 @@
             position: absolute;
             pointer-events: none;
             color: var(--accent-amber);
-            opacity: 0.3;
+            opacity: 0.4;
             z-index: 0;
             animation: float-joy 10s infinite ease-in-out;
         }
@@ -179,7 +179,7 @@
                 <h3 class="text-2xl font-bold mb-6 text-primary-green">הירשמי עכשיו להדרכה</h3>
                 
                 <div class="flex flex-col sm:flex-row justify-center gap-4 text-lg font-bold text-gray-700 mb-10">
-                    <span class="flex items-center gap-2 justify-center bg-amber-50 px-5 py-2 rounded-2xl border border-amber-100"><i data-lucide="calendar" class="w-5 h-5 text-amber-600"></i> יום רביעי 26.02 | 20:30</span>
+                    <span class="flex items-center gap-2 justify-center bg-amber-50 px-5 py-2 rounded-2xl border border-amber-100"><i data-lucide="calendar" class="w-5 h-5 text-amber-600"></i> יום רביעי 25.02 | 20:00</span>
                     <span class="flex items-center gap-2 justify-center bg-amber-50 px-5 py-2 rounded-2xl border border-amber-100"><i data-lucide="home" class="w-5 h-5 text-amber-600"></i> מהנוחות של הבית</span>
                 </div>
 
@@ -198,7 +198,7 @@
                         <span>שמרי לי מקום בהדרכה</span>
                         <i data-lucide="chevron-left" class="w-6 h-6"></i>
                     </button>
-                    <p class="text-center text-sm text-gray-500 mt-6 flex items-center justify-center gap-2 font-medium">
+                    <p class="text-center text-sm text-amber-700 mt-6 flex items-center justify-center gap-2 font-medium">
                         מצטרפות יחד לשמחה שבלב 😊
                     </p>
                 </form>
@@ -328,7 +328,7 @@
                 <h2 class="text-[#B07D62] text-4xl font-bold mb-8">מילה אישית ממני אליך</h2>
                 <div class="space-y-6 text-gray-800 text-xl leading-relaxed font-light">
                     <p>אני יודעת איך זה להרגיש שאת "צריכה להיות שמחה" – ובפנים רק כובד. לנסות לחייך כשבלב יש דאגות. להקשיב ל"משנכנס אדר מרבים בשמחה" – ולהרגיש אשמה שאת לא שם.</p>
-                    <p>עברתי את זה בעצמי. וכשהבנתי את החיבור בין ביטחון לשמחה, בין שמחה לבריאות – <span class="text-joy-accent">הכל השתנה.</span> זה היה שינוי אמיתי שנשאר איתי עד היום.</p>
+                    <p>עברתי את זה בעצמי. וכשהבנתי את החיבור בין ביטחון לשמחה, בין שמחה לבריאות – <span class="text-joy-accent underline">הכל השתנה.</span> זה היה שינוי אמיתי שנשאר איתי עד היום.</p>
                     <p>ההדרכה הזו תיתן לך כלים מעשיים מהתניא ומהמדע שעובדים ממש.</p>
                     <p class="font-bold text-3xl text-primary-green mt-8">בואי ללמוד איתי איך להחזיר את האור ללב.</p>
                     <p class="text-2xl italic mt-2">שלך, רבקה</p>
@@ -359,15 +359,15 @@
                     <h3 class="text-2xl font-bold mb-8 text-center text-primary-green">הירשמי עכשיו להדרכה</h3>
                     <form onsubmit="return handleForm(event, this)" class="space-y-5 flex flex-col items-center">
                         <div class="text-right w-full">
-                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2">שם מלא</label>
+                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2 text-right">שם מלא</label>
                             <input type="text" name="full_name" placeholder="שמך המלא" required class="form-input">
                         </div>
                         <div class="text-right w-full">
-                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2">כתובת מייל</label>
+                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2 text-right">כתובת מייל</label>
                             <input type="email" name="email" placeholder="כתובת מייל" required class="form-input">
                         </div>
                         <div class="text-right w-full">
-                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2">טלפון נייד</label>
+                            <label class="block text-sm font-bold mb-2 text-primary-green pr-2 text-right">טלפון נייד</label>
                             <input type="tel" name="phone" placeholder="מספר נייד" required pattern="05[0-9]{8}" class="form-input">
                         </div>
                         <button type="submit" class="cta-button mt-8 w-full md:w-auto">
@@ -392,7 +392,7 @@
                 <p>יש הרבה הדרכות על בריאות. יש הרבה שיעורים על שמחה. אבל ההדרכה הזו שונה – כי היא מחברת בין השניים: <span class="text-amber-400 font-bold underline underline-offset-4 decoration-white/20">גוף ונפש.</span></p>
                 
                 <div class="bg-white/10 p-10 rounded-[40px] border border-white/20 text-white inline-block max-w-3xl">
-                    היא מלמדת אותך <span class="text-amber-400 font-bold">איך לעבוד עם הדאגות</span> ולהפוך אותן לכוח של חיוניות.
+                    היא מלמדת אותך <span class="text-amber-400 font-bold text-3xl">איך לעבוד עם הדאגות</span> ולהפוך אותן לכוח של חיוניות.
                 </div>
                 
                 <p>היא תכין אותך להיכנס לפורים אחרת. מתוך שמחה פנימית. מתוך ביטחון. מתוך בריאות.</p>
@@ -404,7 +404,7 @@
                 </div>
             </div>
             
-            <a href="#register-top" class="cta-button mt-20 md:w-auto">
+            <a href="#register-top" class="cta-button mt-20 md:w-auto text-white">
                 אני רוצה להצטרף - 37 ₪
             </a>
         </div>
