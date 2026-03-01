@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הלב השמח - חוסן ורוגע במתנה | רבקה הולצברג</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Rubik -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --primary-green: #1B4D3E;
+            --accent-amber: #FFBF00;
+            --soft-terracotta: #B07D62;
+            --premium-gold: #D4AF37;
+            --gold-gradient: linear-gradient(135deg, #F39C12 0%, #D4AF37 50%, #B8860B 100%);
+            --bg-lemon: #FFFBEB;
+        }
+
+        /* נעילת גלישה רוחבית מוחלטת */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: var(--bg-lemon);
+            color: var(--primary-green);
+            font-size: 20px;
+            line-height: 1.8;
+            width: 100%;
+        }
+
+        /* הילת שמש יוקרתית */
+        .sun-glow {
+            position: absolute;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1000px;
+            height: 1000px;
+            background: radial-gradient(circle, rgba(255,191,0,0.15) 0%, rgba(255,255,255,0) 75%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        @keyframes pulse-glow {
+            from { opacity: 0.4; transform: translateX(-50%) scale(1); }
+            to { opacity: 0.8; transform: translateX(-50%) scale(1.1); }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 1);
+            border-radius: 40px;
+            box-shadow: 0 25px 50px -12px rgba(27, 77, 62, 0.1);
+        }
+
+        .cta-button {
+            background: var(--gold-gradient);
+            color: white !important;
+            border-radius: 24px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            padding: 1rem 2.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 15px 45px rgba(212, 175, 55, 0.55);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1.1rem;
+            border-radius: 20px;
+            border: 2px solid rgba(27, 77, 62, 0.1);
+            background-color: #FAFAFA;
+            font-size: 1.1rem;
+            color: var(--primary-green);
+            outline: none;
+            transition: all 0.3s ease;
+            text-align: right;
+        }
+
+        .form-input:focus {
+            border-color: var(--accent-amber);
+            background-color: #fff;
+            box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem !important; }
+            body { font-size: 18px; }
+            .glass-card { border-radius: 24px; padding: 1.5rem !important; }
+            .cta-button { width: 100%; padding: 1rem; }
+        }
+    </style>
+</head>
+<body class="antialiased text-right overflow-x-hidden w-full" dir="rtl">
+
+    <header class="relative pt-20 pb-16 px-6 overflow-hidden">
+        <div class="sun-glow"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-6 py-2 mb-10 rounded-full bg-white/80 border border-amber-200 text-amber-800 text-sm font-bold shadow-sm">
+                <i data-lucide="shield-heart" class="w-4 h-4 text-amber-500"></i>
+                יוזמת חוסן ורוגע לימי חירום ✨
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight text-primary-green tracking-tight">
+                הלב השמח - גוף בריא
+            </h1>
+            
+            <p class="text-2xl md:text-3xl font-bold text-[#B07D62] mb-8 max-w-3xl mx-auto leading-relaxed">
+                במיוחד לימים אלו: הדרכת החיזוק במתנה מלאה 🎁
+            </p>
+            
+            <p class="text-xl md:text-2xl mb-12 text-primary-green max-w-4xl mx-auto font-light leading-relaxed">
+                בזמן שהמתח עולה, הגוף שלנו זקוק לביטחון פנימי יותר מכל. החלטתי לפתוח את ההדרכה ללא עלות, כדי לתת לך כלים מהתניא ומהמדע לשמירה על הבריאות והחוסן שלך ושל משפחתך.
+            </p>
+
+            <!-- Registration Form -->
+            <div class="max-w-xl mx-auto glass-card p-8 md:p-10 border-t-8 border-amber-400 shadow-2xl relative z-20">
+                <h3 class="text-2xl font-bold mb-6 text-primary-green text-center">הירשמי וקבלי גישה מיידית</h3>
+                
+                <form onsubmit="return handleForm(event, this)" class="space-y-4 flex flex-col items-center">
+                    <div class="w-full text-right">
+                        <input type="text" name="full_name" placeholder="שם מלא" required class="form-input">
+                    </div>
+                    <div class="w-full text-right">
+                        <input type="email" name="email" placeholder="כתובת מייל" required class="form-input">
+                    </div>
+                    <div class="w-full text-right">
+                        <input type="tel" name="phone" placeholder="טלפון נייד" required pattern="05[0-9]{8}" class="form-input">
+                    </div>
+                    
+                    <button type="submit" class="cta-button mt-6">
+                        <span>קבלת ההדרכה במתנה</span>
+                        <i data-lucide="heart" class="w-6 h-6"></i>
+                    </button>
+                    <p class="text-center text-sm text-amber-700 mt-6 flex items-center justify-center gap-2 font-medium">
+                        הפרטים שלך נשלחים באהבה 😊
+                    </p>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brief Context -->
+    <section class="bg-white py-20 px-6 shadow-xl relative z-10 overflow-hidden">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-primary-green italic">"משנכנס אדר מרבים בשמחה"</h2>
+            <p class="text-xl mb-6">גם כשהמצב מסביב מאתגר, השמחה היא לא 'בונוס' – היא כלי העבודה הכי חזק שלנו לשמירה על מערכת החיסון, העיכול והלב.</p>
+            <p class="text-xl font-bold text-[#D97706] italic">אנחנו ננצח בלב ובגוף!</p>
+        </div>
+    </section>
+
+    <!-- Legal Footer Script -->
+    <script src="https://rivkaol.github.io/legal-footer.js"></script>
+
+    <script>
+        window.onload = function() { lucide.createIcons(); };
+
+        const MAKE_WEBHOOK_URL = "https://hook.eu2.make.com/8cot88p7c7wt8uhj9kv9qd2cq2qcluax";
+        const WATCH_PAGE_URL = "watch.html";
+
+        async function handleForm(event, form) {
+            event.preventDefault();
+            
+            // וידוא שהטופס תקין לפני שליחה
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            const submitButton = form.querySelector('button');
+            const originalText = submitButton.innerHTML;
+
+            submitButton.disabled = true;
+            submitButton.innerHTML = "מתחברת להדרכה...";
+
+            const formData = new FormData(form);
+            const data = {
+                full_name: formData.get('full_name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                timestamp: new Date().toISOString(),
+                page: "הדרכת הלב השמח - מתנה (מלחמה)"
+            };
+
+            try {
+                const response = await fetch(MAKE_WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    const msg = document.createElement('div');
+                    msg.className = "fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-6 backdrop-blur-md text-right";
+                    msg.innerHTML = `
+                        <div class="bg-white p-12 rounded-[50px] shadow-2xl text-center border-t-[15px] border-[#D4AF37] max-w-md w-full">
+                            <div class="text-amber-500 mb-6 flex justify-center"><i data-lucide="check-circle" style="width:80px; height:80px"></i></div>
+                            <h3 style="color:#1B4D3E; font-size:38px; font-weight:800; margin-bottom:15px">תודה יקירה!</h3>
+                            <p style="font-size:22px; color:#444">שמחה שאת כאן איתנו.<br>מייד תועברי לצפייה בהדרכה...</p>
+                        </div>
+                    `;
+                    document.body.appendChild(msg);
+                    lucide.createIcons();
+                    
+                    setTimeout(() => {
+                        window.location.href = WATCH_PAGE_URL;
+                    }, 2500);
+                } else {
+                    throw new Error();
+                }
+            } catch (error) {
+                // במקרה של שגיאה בכל זאת נעביר לדף הצפייה כדי לא לתסכל את המשתמשת
+                window.location.href = WATCH_PAGE_URL;
+            }
+        }
+    </script>
+</body>
+</html>

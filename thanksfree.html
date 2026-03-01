@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הלב השמח - צפייה בהדרכה | רבקה הולצברג</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Rubik -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --primary-green: #1B4D3E;
+            --accent-amber: #FFBF00;
+            --bg-lemon: #FFFBEB;
+            --premium-gold: #D4AF37;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: var(--bg-lemon);
+            color: var(--primary-green);
+            font-size: 20px;
+            line-height: 1.8;
+            width: 100%;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 40px;
+            box-shadow: 0 30px 60px -12px rgba(27, 77, 62, 0.25);
+            border: 8px solid white;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body class="antialiased text-right min-h-screen flex flex-col" dir="rtl">
+
+    <!-- Header Area -->
+    <nav class="py-8 px-6 text-center border-b border-amber-100 bg-white/50">
+        <h1 class="text-3xl md:text-4xl font-bold text-primary-green">הלב השמח - גוף בריא</h1>
+        <p class="text-amber-700 font-medium mt-2 italic">שלך ובשבילך, רבקה הולצברג</p>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            
+            <div class="mb-12 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-primary-green">צפייה ישירה בהדרכה המלאה</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto font-light">כדאי להכין דף ועט, לשבת במקום שקט ולהתמקד בחיזוק הפנימי שלך.</p>
+            </div>
+
+            <!-- Video Player -->
+            <div class="video-container mb-16">
+                <iframe src="https://player.vimeo.com/video/1168230791" 
+                        frameborder="0" 
+                        allow="autoplay; fullscreen; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="max-w-3xl mx-auto">
+                <div class="glass-card p-10 shadow-lg border-r-[12px] border-amber-400">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <i data-lucide="sparkles" class="text-amber-600"></i> מה לוקחים מהמפגש?
+                    </h3>
+                    <ul class="space-y-4 text-xl font-light text-gray-800">
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-500 font-bold">●</span>
+                            <span>הבנה עמוקה של הקשר הישיר בין ביטחון פנימי לבריאות הגוף.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-500 font-bold">●</span>
+                            <span>כלים מעשיים לשחרור מתחים ולחצים המצטברים במערכות הגוף.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-500 font-bold">●</span>
+                            <span>תובנות לניהול המחשבה והרגש על פי ספר התניא המותאמות לימינו.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-500 font-bold">●</span>
+                            <span>דרך חדשה להסתכל על השמחה – לא כרגש חולף, אלא ככוח ריפוי.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Script -->
+    <script src="https://rivkaol.github.io/legal-footer.js"></script>
+
+    <script>
+        window.onload = function() { lucide.createIcons(); };
+    </script>
+</body>
+</html>
